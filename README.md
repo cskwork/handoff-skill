@@ -2,6 +2,9 @@
 
 Handoff Skill creates a durable state packet for coding agents. It captures what is true now, what changed, what was verified, and the exact plan a later agent should follow.
 
+- Public repo: https://github.com/cskwork/handoff-skill
+- Landing page: https://cskwork.github.io/handoff-skill/
+
 ## Use Cases
 
 - Stop a task without losing implementation state.
