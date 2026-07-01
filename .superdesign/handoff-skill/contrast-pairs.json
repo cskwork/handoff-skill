@@ -1,0 +1,13 @@
+[
+  { "el": "body text", "fg": "#28302b", "bg": "#f7f3ea", "size": "body" },
+  { "el": "muted text", "fg": "#5c675f", "bg": "#f7f3ea", "size": "body" },
+  { "el": "hero text", "fg": "#f4ecdf", "bg": "#151a17", "size": "body" },
+  { "el": "hero secondary text", "fg": "#eadfce", "bg": "#151a17", "size": "body" },
+  { "el": "eyebrow on hero", "fg": "#d8c6ad", "bg": "#151a17", "size": "normal" },
+  { "el": "primary button", "fg": "#241c14", "bg": "#d9853b", "size": "body" },
+  { "el": "secondary button", "fg": "#f4ecdf", "bg": "#25332e", "size": "body" },
+  { "el": "step number", "fg": "#f4ecdf", "bg": "#2f6f68", "size": "body" },
+  { "el": "packet body", "fg": "#f4ecdf", "bg": "#151a17", "size": "body" },
+  { "el": "packet muted", "fg": "#d8c6ad", "bg": "#151a17", "size": "body" },
+  { "el": "code panel", "fg": "#eadfce", "bg": "#202b27", "size": "body" }
+]

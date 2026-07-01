@@ -1,0 +1,9 @@
+{
+  "name": "handoff-skill",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A global agent skill for saving task state and continuation plans.",
+  "scripts": {
+    "test": "node tests/validate-skill.js"
+  }
+}

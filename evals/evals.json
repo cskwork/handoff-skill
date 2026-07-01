@@ -1,0 +1,23 @@
+{
+  "skill_name": "handoff",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We need to stop here. Write a handoff so another agent can continue the feature from the current repo state.",
+      "expected_output": "A saved handoff packet with goal, current state, completed work, files changed, ordered remaining plan, verification plan, suggested skills, resume prompt, and redactions.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want to pause this debugging session and resume later. Save the current theory, commands already run, what failed, and the exact next checks.",
+      "expected_output": "A debugging-focused handoff packet that preserves theory, evidence, failures, unknowns, next checks, and test commands.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Handoff to QA. Include what is ready to verify, what not to touch, and the checks needed before saying done.",
+      "expected_output": "A QA-focused handoff packet with verification scope, protected areas, command evidence, and pass criteria.",
+      "files": []
+    }
+  ]
+}
