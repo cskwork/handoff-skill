@@ -1,6 +1,7 @@
 ---
 name: handoff
-description: Handoff — save state to pause, resume, or transfer work. Use when: "handoff", "pause here", "continue later".
+description: 'Handoff — save state to pause, resume, or transfer work. Use when: "handoff", "pause here", "continue later".'
+
 ---
 
 
