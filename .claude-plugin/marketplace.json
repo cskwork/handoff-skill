@@ -1,14 +1,14 @@
 {
   "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
   "name": "handoff",
-  "description": "Handoff packet workflow for saving agent state, pausing work, resuming later, or transferring a task to another agent. U",
+  "description": "Handoff \u2014 save state to pause, resume, or transfer work. Use when: \"handoff\", \"pause here\", \"continue later\".",
   "owner": {
     "name": "cskwork"
   },
   "plugins": [
     {
       "name": "handoff",
-      "description": "Handoff packet workflow for saving agent state, pausing work, resuming later, or transferring a task to another agent. U",
+      "description": "Handoff \u2014 save state to pause, resume, or transfer work. Use when: \"handoff\", \"pause here\", \"continue later\".",
       "source": "./",
       "category": "productivity"
     }

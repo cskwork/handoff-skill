@@ -1,6 +1,6 @@
 {
   "name": "handoff",
   "version": "0.1.0",
-  "description": "Handoff packet workflow for saving agent state, pausing work, resuming later, or transferring a task to another agent....",
+  "description": "Handoff \u2014 save state to pause, resume, or transfer work. Use when: \"handoff\", \"pause here\", \"continue later\".",
   "contextFileName": "GEMINI.md"
 }

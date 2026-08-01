@@ -1,6 +1,6 @@
 ---
 name: handoff
-description: Handoff packet workflow for saving agent state, pausing work, resuming later, or transferring a task to another agent. Use when the user says handoff, save current state, continue later, pause here, resume in a new session, pass this to another agent, write a continuation plan, or asks for detailed next steps before stopping.
+description: Handoff — save state to pause, resume, or transfer work. Use when: "handoff", "pause here", "continue later".
 argument-hint: "Optional: what the next session or agent should focus on"
 ---
 
