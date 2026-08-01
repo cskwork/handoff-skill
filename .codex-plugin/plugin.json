@@ -1,0 +1,34 @@
+{
+  "name": "handoff",
+  "version": "0.1.0",
+  "description": "Handoff packet workflow for saving agent state, pausing work, resuming later, or transferring a task to another agent. Use when the user says handoff, save current state, continue later, pause here, resume in a new session, pass this to another agent, write a continuation plan, or asks for detailed next steps before stopping.",
+  "author": {
+    "name": "cskwork",
+    "url": "https://github.com/cskwork"
+  },
+  "homepage": "https://github.com/cskwork/handoff",
+  "repository": "https://github.com/cskwork/handoff",
+  "license": "MIT",
+  "keywords": [
+    "handoff",
+    "skill",
+    "claude-code",
+    "codex"
+  ],
+  "skills": "./",
+  "interface": {
+    "displayName": "Handoff",
+    "shortDescription": "Handoff packet workflow for saving agent state, pausing work, resuming later, or",
+    "longDescription": "Handoff packet workflow for saving agent state, pausing work, resuming later, or transferring a task to another agent. Use when the user says handoff, save current state, continue later, pause here, resume in a new session, pass this to another agent, write a continuation plan, or asks for detailed next steps before stopping.",
+    "developerName": "cskwork",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "websiteURL": "https://github.com/cskwork/handoff",
+    "defaultPrompt": [
+      "Use handoff for this task."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
