@@ -1,3 +1,5 @@
+<p align="center"><img src="logo.png" width="120" alt="logo" /></p>
+
 # Handoff Skill
 
 Handoff Skill creates a durable state packet for coding agents. It captures what is true now, what changed, what was verified, and the exact plan a later agent should follow.
