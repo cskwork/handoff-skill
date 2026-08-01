@@ -1,8 +1,8 @@
 ---
 name: handoff
 description: Handoff — save state to pause, resume, or transfer work. Use when: "handoff", "pause here", "continue later".
-argument-hint: "Optional: what the next session or agent should focus on"
 ---
+
 
 # Handoff
 
