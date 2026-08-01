@@ -1,4 +1,4 @@
 # handoff
 
-@./skill/SKILL.md
+@./skills/handoff/SKILL.md
 

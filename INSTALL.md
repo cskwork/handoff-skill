@@ -6,7 +6,7 @@
 ### Install
 
 ```bash
-claude plugin marketplace add cskwork/handoff
+claude plugin marketplace add cskwork/handoff-skill
 claude plugin install handoff@handoff
 ```
 
@@ -39,7 +39,7 @@ claude plugin marketplace remove handoff
 ### Install
 
 ```bash
-codex plugin marketplace add cskwork/handoff --ref main
+codex plugin marketplace add cskwork/handoff-skill --ref main
 codex plugin add handoff@handoff
 ```
 
@@ -66,14 +66,14 @@ codex plugin marketplace remove handoff
 ### Install (extension, always-on)
 
 ```bash
-gemini extensions install https://github.com/cskwork/handoff
+gemini extensions install https://github.com/cskwork/handoff-skill
 ```
 
 ### Install (command, opt-in)
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/cskwork/handoff/main/skills/handoff/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/cskwork/handoff-skill/main/skills/handoff-skill/agents/gemini.toml \
   -o ~/.gemini/commands/handoff.toml
 ```
 
@@ -99,8 +99,8 @@ gemini extensions uninstall handoff
 ### Install
 
 ```bash
-npx skills add cskwork/handoff
-npx skills add cskwork/handoff -g
+npx skills add cskwork/handoff-skill
+npx skills add cskwork/handoff-skill -g
 ```
 
 Type `/handoff` in a new agent chat.
@@ -131,7 +131,7 @@ npx skills remove handoff
 ### Install
 
 ```bash
-agy plugin install https://github.com/cskwork/handoff
+agy plugin install https://github.com/cskwork/handoff-skill
 ```
 
 ### Verify

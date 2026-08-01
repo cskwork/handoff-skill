@@ -6,8 +6,8 @@
     "name": "cskwork",
     "url": "https://github.com/cskwork"
   },
-  "homepage": "https://github.com/cskwork/handoff",
-  "repository": "https://github.com/cskwork/handoff",
+  "homepage": "https://github.com/cskwork/handoff-skill",
+  "repository": "https://github.com/cskwork/handoff-skill",
   "license": "MIT",
   "keywords": [
     "handoff",
@@ -25,7 +25,7 @@
     "capabilities": [
       "Instructions"
     ],
-    "websiteURL": "https://github.com/cskwork/handoff",
+    "websiteURL": "https://github.com/cskwork/handoff-skill",
     "defaultPrompt": [
       "Use handoff for this task."
     ],
