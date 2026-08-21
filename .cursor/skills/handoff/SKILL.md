@@ -1,13 +1,11 @@
 ---
 name: handoff
-description: 'Handoff — save state to pause, resume, or transfer work. Use when: "handoff", "pause here", "continue later".'
-
+description: 'Handoff: saves state to pause, resume, or transfer work. Use when: "handoff", "pause here and continue later", "hand this over to QA or another agent".'
 ---
-
 
 # Handoff
 
-Create a handoff packet: a factual state snapshot plus an executable continuation plan. The packet is for a future agent with fresh context, so it must carry enough ground truth to resume without guessing.
+Create a handoff packet: a factual state snapshot plus an executable continuation plan. The packet is for the next agent, who starts with fresh context, so it must carry enough ground truth to resume without guessing.
 
 ## Workflow
 
@@ -32,7 +30,7 @@ Create a handoff packet: a factual state snapshot plus an executable continuatio
 3. **Protect sensitive material.**
    Redact credentials, tokens, passwords, private personal data, and session cookies. Replace them with labels such as `[REDACTED_API_TOKEN]` and describe where the next agent should retrieve them safely.
 
-   Done when the packet can be shared with a fresh agent without leaking secrets.
+   Done when the packet can be shared with the next agent without leaking secrets.
 
 4. **Write the continuation plan.**
    Convert remaining work into ordered steps. Each step must include:
@@ -52,23 +50,14 @@ Create a handoff packet: a factual state snapshot plus an executable continuatio
    - Else if a repository is active, save to `docs/handoffs/<YYYY-MM-DD-HHMM>-<topic>.md`.
    - Else save to the OS temp directory and name the file with the same timestamp and topic.
 
-   Do not duplicate existing PRDs, plans, ADRs, tickets, diffs, or commits. Link to them and summarize only what matters for restart.
+   Link to existing PRDs, plans, ADRs, tickets, diffs, and commits; summarize only what matters for restart.
 
-   Done when the file path is stable and included in the final response.
+   Done when the file is written and its exact path is known.
 
 6. **Run the resume check.**
-   Read the packet as if you are a new agent. Verify that it answers:
-   - What is the task?
-   - What has already been done?
-   - What changed on disk?
-   - What evidence proves the state?
-   - What is the exact next action?
-   - What should not be touched?
-   - What tests or checks prove completion?
+   Read the packet as if you are the next agent, then score it against the `## Resume Check` checklist below.
 
-   Fix gaps before responding.
-
-   Done when a fresh agent can continue from the packet alone plus referenced artifacts.
+   Done when the next agent can continue from the packet alone plus referenced artifacts.
 
 ## Handoff Packet Template
 
@@ -133,10 +122,11 @@ Status: <not started | in progress | blocked | ready for review | complete excep
 Before finalizing, score the packet against this checklist:
 
 - Goal and latest request are clear.
-- Current state is evidence-backed, not guessed.
+- Completed work and current state are evidence-backed, not guessed.
 - Every modified file has a reason.
+- Files and areas the next agent must not touch are named.
 - Every running command, server, or external dependency is accounted for.
-- Remaining plan is ordered and each step has a completion criterion.
+- Remaining plan is ordered, starts with the exact next action, and each step has a completion criterion.
 - Verification plan names exact commands or concrete manual checks.
 - Risks, assumptions, and redactions are explicit.
 - Resume prompt is ready to paste.
