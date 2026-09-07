@@ -12,7 +12,6 @@ Create a handoff packet: a factual state snapshot plus an executable continuatio
 1. **Fix the handoff target.**
    Infer whether the recipient is the same agent later, another coding agent, a reviewer, QA, or a human. If the user supplied arguments, treat them as the next session focus. Ask one question only when the recipient or purpose changes what must be captured.
 
-   Done when the packet has a clear recipient, focus, and success condition.
 
 2. **Inventory the current state.**
    Gather only durable facts:
@@ -25,15 +24,13 @@ Create a handoff packet: a factual state snapshot plus an executable continuatio
 
    Prefer artifact references over pasted bulk content. Use paths, URLs, issue IDs, commit hashes, command names, and short evidence quotes. If a command such as `git status` hangs or fails, record that exact fact instead of inventing state.
 
-   Done when every active thread of work has either a current status, a next action, or an explicit "unknown".
 
 3. **Protect sensitive material.**
    Redact credentials, tokens, passwords, private personal data, and session cookies. Replace them with labels such as `[REDACTED_API_TOKEN]` and describe where the next agent should retrieve them safely.
 
-   Done when the packet can be shared with the next agent without leaking secrets.
 
 4. **Write the continuation plan.**
-   Convert remaining work into ordered steps. Each step must include:
+   Convert remaining work into ordered steps. Include the details needed to execute and verify each step:
    - Why it exists.
    - Exact files or systems to inspect or edit.
    - Commands to run when known.
@@ -42,7 +39,6 @@ Create a handoff packet: a factual state snapshot plus an executable continuatio
 
    Keep tasks small enough that the next agent can complete or verify them one by one.
 
-   Done when the next agent can start with step 1 without rereading the full conversation.
 
 5. **Save the packet.**
    Use the most durable appropriate location:
@@ -52,12 +48,10 @@ Create a handoff packet: a factual state snapshot plus an executable continuatio
 
    Link to existing PRDs, plans, ADRs, tickets, diffs, and commits; summarize only what matters for restart.
 
-   Done when the file is written and its exact path is known.
 
 6. **Run the resume check.**
-   Read the packet as if you are the next agent, then score it against the `## Resume Check` checklist below.
+   Read the packet as if you are the next agent, then check it against the `## Resume Check` checklist below.
 
-   Done when the next agent can continue from the packet alone plus referenced artifacts.
 
 ## Handoff Packet Template
 
@@ -119,7 +113,7 @@ Status: <not started | in progress | blocked | ready for review | complete excep
 
 ## Resume Check
 
-Before finalizing, score the packet against this checklist:
+Before finalizing, check:
 
 - Goal and latest request are clear.
 - Completed work and current state are evidence-backed, not guessed.

@@ -27,7 +27,7 @@ Manual install:
 
 ```bash
 mkdir -p "$HOME/.agents/skills/handoff"
-cp skill/SKILL.md "$HOME/.agents/skills/handoff/SKILL.md"
+cp skills/handoff/SKILL.md "$HOME/.agents/skills/handoff/SKILL.md"
 ```
 
 ## Test
@@ -62,3 +62,14 @@ A good handoff packet includes:
 ## GitHub Pages
 
 The landing page lives in `docs/`. Enable GitHub Pages with source `main` and folder `/docs`.
+
+## Maintained skill source
+
+Edit `skills/` only. The existing Cursor package is a generated distribution:
+
+```bash
+python3 scripts/sync-cursor.py
+python3 scripts/sync-cursor.py --check
+```
+
+Keep generated files committed so direct Cursor installation remains self-contained.

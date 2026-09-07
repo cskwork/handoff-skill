@@ -3,7 +3,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
-const skillPath = path.join(root, "skill", "SKILL.md");
+const skillPath = path.join(root, "skills", "handoff", "SKILL.md");
 const skill = fs.readFileSync(skillPath, "utf8");
 
 let failures = 0;
